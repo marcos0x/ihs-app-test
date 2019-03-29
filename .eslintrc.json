@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": false,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": { "Promise": true },
+  "plugins": ["react", "react-native", "flowtype"],
+  "extends": ["airbnb", "plugin:react/recommended", "plugin:flowtype/recommended"],
+  "rules": {
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "no-unused-vars": 0,
+    "no-else-return": 0,
+    "no-tabs": 0,
+    "no-console": 0,
+    "consistent-return": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": [2, { "ignore": ["ihsapptest"] }],
+    "import/extensions": [2, { "js": "never" }],
+    "import/prefer-default-export": 0,
+    "react/jsx-indent": [2, 2],
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-warning-comments": [0, { "terms": ["todo", "fixme", "example"] }],
+    "max-len": 0,
+    "react/prefer-stateless-function": 0,
+    "react/display-name": 0,
+    "no-underscore-dangle": 0,
+    "global-require": 0,
+    "object-curly-newline": 0,
+    "react/require-default-props": 0,
+    "comma-dangle": 0,
+    "camelcase": 0,
+    "react/no-unused-prop-types": 0,
+    "class-methods-use-this": 0,
+    "react/forbid-prop-types": 0,
+    "no-throw-literal": 0
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  }
+}
